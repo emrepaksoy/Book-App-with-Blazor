@@ -10,10 +10,10 @@ namespace BlazorAppBook.Infrastructure.Context
             
         }
 
-        DbSet<BookEntity> Book { get; set; }
-
-
-
-
+        public DbSet<BookEntity> Book { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

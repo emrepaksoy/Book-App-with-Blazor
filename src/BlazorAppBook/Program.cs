@@ -1,5 +1,8 @@
+using BlazorAppBook.Application.Interfaces;
 using BlazorAppBook.Components;
 using BlazorAppBook.Infrastructure.Context;
+using BlazorAppBook.Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-builder.Services.AddDbContextFactory<BlazorAppBookDbContext>();
+builder.Services.AddDbContextFactory<BlazorAppBookDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+});
+
+builder.Services.AddScoped<IBookRepository, BookRepository>();
 
 var app = builder.Build();
 
