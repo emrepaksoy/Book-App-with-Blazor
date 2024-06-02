@@ -1,0 +1,51 @@
+﻿.book-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+    background-color: #fdfdfd; 
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+    .book-card:hover {
+        transform: translateY(-10px);
+        background-color: #f0f8ff;
+    }
+
+.book-card-body {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.book-card h5 {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.book-card .author {
+    font-size: 1rem;
+    color: #007bff; 
+    margin-bottom: 5px;
+}
+
+.book-card .publication-date {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.actions {
+    padding: 0 20px 20px 20px; 
+    margin-top: auto; 
+    align-self: flex-end; 
+}
+
+.book-card-body {
+    background-color: #ffffff;
+    border-radius: 8px;
+}

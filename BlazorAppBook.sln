@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppBook.Application",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppBook.Infrastructure", "src\BlazorAppBook.Infrastructure\BlazorAppBook.Infrastructure.csproj", "{AE22D322-2D34-448E-BC14-5CD0F4651ECA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAppBook", "src\BlazorAppBook\BlazorAppBook.csproj", "{E18A58E8-B06F-46F5-9CB9-1C3C6D48E876}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppBook", "src\BlazorAppBook\BlazorAppBook.csproj", "{E18A58E8-B06F-46F5-9CB9-1C3C6D48E876}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
